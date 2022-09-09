@@ -2,6 +2,7 @@ import React from "react";
 
 // Local Components
 import { Cell } from "./Cell";
+import { Scores } from "./Scores";
 
 const Player = {
   x: "X",
@@ -83,10 +84,10 @@ export const Board = () => {
 
   return (
     <>
-      <section>
-        <p>Turn of: {turn}</p>
-        <p>X has won: {scoreboard[Player.x]}</p>
-        <p>O has won: {scoreboard[Player.o]}</p>
+      <section id="players-turn">
+        <h2>It’s {turn} turn!</h2>
+        {/* <p>X has won: {scoreboard[Player.x]}</p>
+        <p>O has won: {scoreboard[Player.o]}</p> */}
       </section>
       <div className="board">
         {cells.map((cell, index) => (
@@ -97,16 +98,23 @@ export const Board = () => {
           />
         ))}
       </div>
-      {status !== Status.playing && (
-        <section>
-          <p>
-            {status === Status.draw && "Tied!"}
-            {status === Status.finished &&
-              `The winner is ${turn === Player.o ? "X" : "O"}!`}
-          </p>
-          <button onClick={handleReset}>Restart</button>
-        </section>
-      )}
+       <Scores
+          firstPlayer={Player.x}
+          secondPlayer={Player.o}
+          firstPlayerScore={scoreboard[Player.x]}
+          secondPlayerScore={scoreboard[Player.o]}
+        />
+      {/* {status !== Status.playing && (
+       
+        // <section>
+        //   <p>
+        //     {status === Status.draw && "Tied!"}
+        //     {status === Status.finished &&
+        //       `The winner is ${turn === Player.o ? "X" : "O"}!`}
+        //   </p>
+        //   <button onClick={handleReset}>Restart</button>
+        // </section>
+      )} */}
     </>
   );
 };
