@@ -1,22 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Paytone+One&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  padding: 2%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  font-size: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  font-family: "Montserrat", sans-serif;
 }
+
+main {
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-family: "Paytone One", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button-primary {
+  background: #74c69d;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 999px;
+  color: white;
+  display: block;
+  font-family: "Paytone One", sans-serif;
+  font-size: 20px;
+  padding: 0.8rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  margin: auto;
+  max-width: 35rem;
+  width: 100%;
+}
+
+/* -------- HOME PAGE -------- */
+
+.home-main {
+  background: linear-gradient(180deg, #74c69d 0%, #5214ff 100%);
+  padding: 6.2rem 6.4rem;
+}
+
+.home-main h1 {
+  font-size: 9.6rem;
+}
+
+#name-players {
+  margin-top: 8rem;
+}
+
+#name-players h2 {
+  font-size: 2rem;
+}
+
+.name-player {
+  margin: 1.4rem auto 0;
+  width: 100%;
+}
+
+.name-player label {
+  color: white;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.name-player input {
+  background: #ffffff;
+  border: none;
+  border-radius: 999px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0.6rem auto 0;
+  max-width: 35rem;
+  padding: 1.4rem 3.2rem;
+  outline: none;
+  width: 100%;
+}
+
+.name-player input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  opacity: 0.3;
+  text-align: center;
+}
+
+.home-main .button-primary {
+  margin-top: 7.5rem;
+}
+
+/* -------- BOARD PAGE -------- */
 
 .board {
   border: 1px solid black;

@@ -3,7 +3,7 @@ import { Board } from "../components";
 
 export const BoardPage = () => {
   return (
-    <main>
+    <main className="board-main">
       <Board />
     </main>
   );
