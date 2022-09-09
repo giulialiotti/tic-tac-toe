@@ -113,6 +113,7 @@ export const Board = () => {
       />
       {openOverlay && (
         <StatusOverlay
+          hasWon={status === Status.finished}
           handleReset={handleReset}
           message={
             status === Status.finished
