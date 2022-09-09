@@ -17,3 +17,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.board {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(3, 4rem);
+  margin-top: 2rem;
+  width: max-content;
+}
+
+.cell {
+  aspect-ratio: 1/1;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}

@@ -1,14 +1,18 @@
-import "./App.css";
+// External Components
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-// Local Components
-import { Board } from "./components";
+// Pages
+import { Home } from "./pages/home";
+import { BoardPage } from "./pages/boardPage";
 
 function App() {
   return (
-    <div className="App">
-      Tic Tac Toe game
-      <Board />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/board" exact element={<BoardPage />} />
+      </Routes>
+    </Router>
   );
 }
 
