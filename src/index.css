@@ -36,16 +36,18 @@ h2 {
   background: #74c69d;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 999px;
+  border: none;
   color: white;
   display: block;
   font-family: "Paytone One", sans-serif;
-  font-size: 20px;
+  font-size: 2rem;
   padding: 0.8rem;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 35rem;
   width: 100%;
 }
@@ -73,7 +75,7 @@ h2 {
 .name-player label {
   color: white;
   display: block;
-  font-size: 12px;
+  font-size: 1.2rem;
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -134,7 +136,7 @@ h2 {
 
 .cell p {
   font-family: "Paytone One", sans-serif;
-  font-size: 96px;
+  font-size: 9.6rem;
   line-height: 1;
   margin-top: -1rem;
   background: linear-gradient(180deg, #5214ff 0%, #7afbba 100%);
@@ -198,3 +200,37 @@ h2 {
   text-transform: uppercase;
   width: 50%;
 }
+
+/* Status Overlay */
+
+.state-overlay {
+  background: linear-gradient(0.03deg, #5214ff -11.61%, #74c69d 111.61%);
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 6.2rem 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.state-overlay p {
+  align-self: center;
+  color: white;
+  font-family: "Paytone One", sans-serif;
+  font-size: 5.2rem;
+  grid-column: 1;
+  grid-row: 1/span 3;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.state-overlay .button-primary {
+  align-self: end;
+  grid-column: 1;
+  grid-row: 3;
+}
+
