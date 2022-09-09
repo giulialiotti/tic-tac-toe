@@ -63,13 +63,29 @@ h2 {
   font-size: 9.6rem;
 }
 
+.home-main h1 span {
+  display: inline-block;
+  /* Animation values */
+  transform: scale(0.8);
+  visibility: hidden;
+}
+
 #name-players {
   margin-top: 8rem;
+}
+
+#name-players h2 {
+  /* Animation values */
+  transform: translateY(80px);
+  visibility: hidden;
 }
 
 .name-player {
   margin: 1.4rem auto 0;
   width: 100%;
+  /* Animation values */
+  transform: translateY(80px);
+  visibility: hidden;
 }
 
 .name-player label {
@@ -103,8 +119,11 @@ h2 {
   text-align: center;
 }
 
-.home-main .button-primary {
+.play-now-button {
   margin-top: 7.5rem;
+  /* Animation values */
+  transform: translateY(80px);
+  visibility: hidden;
 }
 
 /* -------- BOARD PAGE -------- */

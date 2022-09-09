@@ -1,16 +1,34 @@
+import React from "react";
+
 // Local Components
 import { NamePlayer } from "../components";
 
+// Animations
+import { revealHomePage } from "../animations";
+
 export const Home = () => {
+  React.useEffect(() => {
+    const killAnimation = revealHomePage();
+
+    return killAnimation;
+  }, []);
+
   return (
     <main className="home-main">
       <header>
         <h1>
-          Tic
+          {/* Spans are for animation */}
+          <span className="headline-span">T</span>
+          <span className="headline-span">i</span>
+          <span className="headline-span">c</span>
           <br />
-          tac
+          <span className="headline-span">T</span>
+          <span className="headline-span">a</span>
+          <span className="headline-span">c</span>
           <br />
-          toe
+          <span className="headline-span">T</span>
+          <span className="headline-span">o</span>
+          <span className="headline-span">e</span>
         </h1>
       </header>
       <section id="name-players">
@@ -19,7 +37,7 @@ export const Home = () => {
         <NamePlayer label="Second Player" />
       </section>
       <section>
-        <a className="button-primary" href="/board">
+        <a className="button-primary play-now-button" href="/board">
           Play now!
         </a>
       </section>
