@@ -76,7 +76,7 @@ h2 {
 
 #name-players h2 {
   /* Animation values */
-  transform: translateY(80px);
+  transform: translateY(8rem);
   visibility: hidden;
 }
 
@@ -84,7 +84,7 @@ h2 {
   margin: 1.4rem auto 0;
   width: 100%;
   /* Animation values */
-  transform: translateY(80px);
+  transform: translateY(8rem);
   visibility: hidden;
 }
 
@@ -122,7 +122,7 @@ h2 {
 .play-now-button {
   margin-top: 7.5rem;
   /* Animation values */
-  transform: translateY(80px);
+  transform: translateY(8rem);
   visibility: hidden;
 }
 
@@ -151,6 +151,15 @@ h2 {
   justify-content: center;
   position: relative;
   width: 10rem;
+  /* Animation values */
+  transform: scale(0.8);
+  visibility: hidden;
+}
+
+#players-turn {
+  /* Animation values */
+  transform: translateY(8rem);
+  visibility: hidden;
 }
 
 .cell p {
@@ -169,6 +178,12 @@ h2 {
   margin-top: 5.4rem;
 }
 
+.scores-wrapper h2 {
+  /* Animation values */
+  transform: translateY(8rem);
+  visibility: hidden;
+}
+
 .scores-wrapper__players-names {
   align-items: center;
   background: white;
@@ -180,6 +195,9 @@ h2 {
   max-width: 33rem;
   padding: 0.4rem;
   width: 100%;
+  /* Animation values */
+  transform: translateY(8rem);
+  visibility: hidden;
 }
 
 .scores-wrapper__players-names p {
@@ -208,6 +226,9 @@ h2 {
   margin: 0 auto;
   max-width: 33rem;
   width: 100%;
+  /* Animation values */
+  transform: translateY(8rem);
+  visibility: hidden;
 }
 
 .scores-wrapper__players-scores p {
