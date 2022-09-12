@@ -38,6 +38,7 @@ h2 {
   border-radius: 999px;
   border: none;
   color: white;
+  cursor: pointer;
   display: block;
   font-family: "Paytone One", sans-serif;
   font-size: 2rem;
@@ -274,9 +275,12 @@ h2 {
   align-self: end;
   grid-column: 1;
   grid-row: 3;
+  position: relative;
+  z-index: 1;
 }
 
 .lottie-wrapper {
+  pointer-events: none;
   position: absolute;
   top: 50%;
   left: 50%;
