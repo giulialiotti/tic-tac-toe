@@ -3,10 +3,18 @@ import React, { Suspense } from "react";
 // Local Components
 import { LottieWrapper } from "./lottie";
 
-export const StatusOverlay = ({ hasWon, message, handleReset }) => {
+export const StatusOverlay = ({ hasWon, player, handleReset }) => {
   return (
     <div className="state-overlay">
-      <p>{message}</p>
+      {hasWon ? (
+        <p>
+          The winner is
+          <br />
+          {player}!
+        </p>
+      ) : (
+        <p>It's a tie!</p>
+      )}
       <button className="button-primary" onClick={handleReset}>
         Play again
       </button>

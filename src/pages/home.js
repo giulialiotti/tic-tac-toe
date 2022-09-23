@@ -1,5 +1,8 @@
 import React from "react";
 
+// External Components
+import { Link } from "react-router-dom";
+
 // Local Components
 import { NamePlayer } from "../components";
 
@@ -37,9 +40,9 @@ export const Home = () => {
         <NamePlayer label="Second Player" />
       </section>
       <section>
-        <a className="button-primary play-now-button" href="/board">
+        <Link className="button-primary play-now-button" to="/board">
           Play now!
-        </a>
+        </Link>
       </section>
     </main>
   );
